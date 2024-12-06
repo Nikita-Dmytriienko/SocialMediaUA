@@ -33,86 +33,89 @@
                         </a>
                     </div>
                 </div>
-               <div class="flex-1 relative">
-                    <div class="max-w-[1220px] mx-auto flex items-center">
-                        <form id="search--box" class="xl:w-[680px] sm:w-96 sm:realative rounded-xl overflow-hidden z-20 bg-
-                    secondery max-md:hidden w-screen left-0 max-sm:fixed max-sm:top-2">
-                            <ion-icon name="search" class="absolute left-4 top-1/2 -translate-y-1/2"></ion-icon>
-                            <input type="text" name="query" placeholder="Search Posts, Friends..." class="w-
-                    full !pl-10 !font-normal !bg-transparent h-12 !text-sm" />
-                        </form>
 
-                        <div class="flex items-center sm:gap-4 gap-2 absolute right-5 top-1/2 -translate-y-1/2
+            </div>
+            <div class="flex-1 relative">
+                <div class="max-w-[1220px] mx-auto flex items-center">
+                    <form id="search--box" class="xl:w-[680px] sm:w-96 sm:realative rounded-xl overflow-hidden z-20 bg-
+                    secondery max-md:hidden w-screen left-0 max-sm:fixed max-sm:top-2">
+                        <ion-icon name="search" class="absolute left-4 top-1/2 -translate-y-1/2"></ion-icon>
+                        <input type="text" name="query" placeholder="Search Posts, Friends..." class="w-
+                    full !pl-10 !font-normal !bg-transparent h-12 !text-sm" />
+                    </form>
+
+                    <div class="flex items-center sm:gap-4 gap-2 absolute right-5 top-1/2 -translate-y-1/2
                     text-black">
 
-                            <button type="button" class="sm:p-2 p-1 rounded-full realative sm:bg-secondery">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" />
-                                    <path d="M13.73 21a2 2 0 01-3.46 0" />
-                                    <path d="M2 8c0-2.2.7-4.3 2-6" />
-                                    <path d="M22 8a10 10 0 00-2-6" />
-                                </svg>
-                                <div class="absolute top-0 right-0 -m-1 bg-red-600 text-white text xmlns px-1
+                        <button type="button" class="sm:p-2 p-1 rounded-full realative sm:bg-secondery">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                                <path d="M13.73 21a2 2 0 01-3.46 0" />
+                                <path d="M2 8c0-2.2.7-4.3 2-6" />
+                                <path d="M22 8a10 10 0 00-2-6" />
+                            </svg>
+                            <div class="absolute top-0 right-0 -m-1 bg-red-600 text-white text xmlns px-1
                             rounded-full" id="notificationsCount">0</div>
-                            </button>
+                        </button>
 
-                            <div class="hidden bg-white pr-1.right-5 rounded-lg drop-shadow-xl md:w-[365px] w-screen
+                        <div class="hidden bg-white pr-1.right-5 rounded-lg drop-shadow-xl md:w-[365px] w-screen
                         border2" uk-drop="offset:6;pos: bottom-right; mode: click; animate-out: true;">
-                                <div class="flex items-center justify-between gap-2 p-4 pb-2">
-                                    <h3 class="font-bold text-xl">Notifications</h3>
-                                </div>
+                            <div class="flex items-center justify-between gap-2 p-4 pb-2">
+                                <h3 class="font-bold text-xl">Notifications</h3>
+                            </div>
 
-                                <div class="text-sm h-[400px] w-full overflow-y-auto pr-2">
-                                    <div class="pl-2 p-1 text-sm font-normal" id="notifications-dropdown">
-                                        No notifications...
-                                    </div>
+                            <div class="text-sm h-[400px] w-full overflow-y-auto pr-2">
+                                <div class="pl-2 p-1 text-sm font-normal" id="notifications-dropdown">
+                                    No notifications...
                                 </div>
                             </div>
-                            @* search *@
-                            <div class="max-w-[1220px] mx-auto flex items-center">
-                                <div class="flex items-center sm:gap-4 gap-2 absolute right-5 top-1/2-6 -translate-y-1/2
+                        </div>
+                        @* search *@
+                        <div class="max-w-[1220px] mx-auto flex items-center">
+                            <div class="flex items-center sm:gap-4 gap-2 absolute right-5 top-1/2-6 -translate-y-1/2
                             text-black">
-                                    <div class="rounded-full-full relative bg-secondery cursor-pointer shrink-0">
-                                        <img src="~/images/avatar/user.png" class="sm:w-9 sm:h-9 w-7 h-7 rounded-full
+                                <div class="rounded-full-full relative bg-secondery cursor-pointer shrink-0">
+                                    <img src="~/images/avatar/user.png" class="sm:w-9 sm:h-9 w-7 h-7 rounded-full
                                     shadow shrink-0" />
-                                    </div>
-                                    <div class="hidden bg-white rounded-lg drop-shadow-xl w-64 border2"
-                                        uk-drop="offset:680px;pos: bottom-right;animate-out: true;">
-                                        <a>
-                                            <div class="p-4 py-5 flex items-center gap-4">
-                                                <img src="~/images/avatar/user.png" class="sm:w-10 sm:h-10 rounded-full
+                                </div>
+                                <div class="hidden bg-white rounded-lg drop-shadow-xl w-64 border2"
+                                    uk-drop="offset:680px;pos: bottom-right;animate-out: true;">
+                                    <a>
+                                        <div class="p-4 py-5 flex items-center gap-4">
+                                            <img src="~/images/avatar/user.png" class="sm:w-10 sm:h-10 rounded-full
                                             shadow" />
-                                                <div class="flex-1">
-                                                    <h4 class="text-sm font-bold-medium text-black">Name Surname</h4>
-                                                    <div class="text-sm mt-1 text-blue-600 font-light/70">nickname
-                                                    </div>
+                                            <div class="flex-1">
+                                                <h4 class="text-sm font-bold-medium text-black">Name Surname</h4>
+                                                <div class="text-sm mt-1 text-blue-600 font-light/70">nickname
                                                 </div>
-
-                                                <hr />
-                                                <nav>
-                                                    <a>
-                                                        <div class="flex items-center gap-2.5 hover:bg-secondery p-2 px-2.5 rounded-md">
-                                                            <ion-icon name="setting-outline" class="text-lg"></ion-icon> My
-                                                        Account
-                                                        </div>
-                                                    </a>
-                                                    <hr />
-                                                    <a>
-                                                        <div class="flex items-center gap-2.5 hover:bg-secondery p-2 px-2.5 rounded-md">
-                                                            <ion-icon name="exit-outline" class="text-lg"></ion-icon> Log
-                                                        Out
-                                                        </div>
-                                                    </a>
-                                                </nav>
                                             </div>
-                                        </a>
-                                    </div>
+
+                                            <hr />
+                                            <nav>
+                                                <a>
+                                                    <div
+                                                        class="flex items-center gap-2.5 hover:bg-secondery p-2 px-2.5 rounded-md">
+                                                        <ion-icon name="setting-outline" class="text-lg"></ion-icon> My
+                                                        Account
+                                                    </div>
+                                                </a>
+                                                <hr />
+                                                <a>
+                                                    <div
+                                                        class="flex items-center gap-2.5 hover:bg-secondery p-2 px-2.5 rounded-md">
+                                                        <ion-icon name="exit-outline" class="text-lg"></ion-icon> Log
+                                                        Out
+                                                    </div>
+                                                </a>
+                                            </nav>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                        </div> 
-                </div>
+                        </div>
+                    </div>
         </header>
 
         @* Side bar (left) *@
