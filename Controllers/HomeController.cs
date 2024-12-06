@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using SocialMediaUA.Models;
+using SocialMediaUA.Data.Models;
 
 namespace SocialMediaUA.Controllers
 {
